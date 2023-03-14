@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A64D5A48-9986-4A95-83FB-D8E8522E9139}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Assembly-CSharp</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Rewired_Core">
+      <HintPath>..\BALDI_Data\Managed\Rewired_Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Windows">
+      <HintPath>..\BALDI_Data\Managed\Rewired_Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\BALDI_Data\Managed\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\BALDI_Data\Managed\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\BALDI_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>..\BALDI_Data\Managed\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\BALDI_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\BALDI_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\BALDI_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\BALDI_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\BALDI_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\BALDI_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\BALDI_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\BALDI_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgentTest.cs" />
+    <Compile Include="AILocationSelectorScript.cs" />
+    <Compile Include="AlarmClockScript.cs" />
+    <Compile Include="AmbienceScript.cs" />
+    <Compile Include="AudioQueueScript.cs" />
+    <Compile Include="BackButtonScript.cs" />
+    <Compile Include="BaldiScript.cs" />
+    <Compile Include="BasicButtonScript.cs" />
+    <Compile Include="Billboard.cs" />
+    <Compile Include="BsodaEffectScript.cs" />
+    <Compile Include="BsodaSparyScript.cs" />
+    <Compile Include="BullyScript.cs" />
+    <Compile Include="CameraScript.cs" />
+    <Compile Include="CameraScript_Simple.cs" />
+    <Compile Include="ClickableTest.cs" />
+    <Compile Include="CraftersScript.cs" />
+    <Compile Include="CraftersTriggerScript.cs" />
+    <Compile Include="CursorControllerScript.cs" />
+    <Compile Include="DarkDoorScript.cs" />
+    <Compile Include="DebugFirstPrizeScript.cs" />
+    <Compile Include="DebugScript.cs" />
+    <Compile Include="DefaultSettingsScript.cs" />
+    <Compile Include="DetentionTextScript.cs" />
+    <Compile Include="DoorScript.cs" />
+    <Compile Include="EndlessNotebookScript.cs" />
+    <Compile Include="EndlessTextScript.cs" />
+    <Compile Include="EntranceScript.cs" />
+    <Compile Include="ExitButtonScript.cs" />
+    <Compile Include="ExitTriggerScript.cs" />
+    <Compile Include="FacultyTriggerScript.cs" />
+    <Compile Include="FirstPrizeScript.cs" />
+    <Compile Include="FirstPrizeSpriteScript.cs" />
+    <Compile Include="GameControllerScript.cs" />
+    <Compile Include="GameOverScript.cs" />
+    <Compile Include="HuggingScript.cs" />
+    <Compile Include="InputTypeManager.cs" />
+    <Compile Include="iOSDisabler.cs" />
+    <Compile Include="ItemImageScript.cs" />
+    <Compile Include="JumpRopeScript.cs" />
+    <Compile Include="MaterialKit\DpCanvasScaler.cs" />
+    <Compile Include="MathGameScript.cs" />
+    <Compile Include="MenuController.cs" />
+    <Compile Include="MobileController.cs" />
+    <Compile Include="MouseoverScript.cs" />
+    <Compile Include="MouseSliderScript.cs" />
+    <Compile Include="MoveTest.cs" />
+    <Compile Include="NearExitTriggerScript.cs" />
+    <Compile Include="NeedMoreScript.cs" />
+    <Compile Include="NoKeyboardScript.cs" />
+    <Compile Include="NotebookScript.cs" />
+    <Compile Include="OnAwakeTrigger.cs" />
+    <Compile Include="OptionsManager.cs" />
+    <Compile Include="PauseMenuScript.cs" />
+    <Compile Include="PickupAnimationScript.cs" />
+    <Compile Include="PickupScript.cs" />
+    <Compile Include="PlatformSpecificMenu.cs" />
+    <Compile Include="PlayerMovement.cs" />
+    <Compile Include="PlayerScript.cs" />
+    <Compile Include="PlaytimeScript.cs" />
+    <Compile Include="PrincipalScript.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuarterSpawnScript.cs" />
+    <Compile Include="Rewired\Data\UserDataStore_PlayerPrefs.cs" />
+    <Compile Include="Rewired\Demos\Bullet.cs" />
+    <Compile Include="Rewired\Demos\ControlMapperDemoMessage.cs" />
+    <Compile Include="Rewired\Demos\ControlRemappingDemo1.cs" />
+    <Compile Include="Rewired\Demos\CustomControllerDemo.cs" />
+    <Compile Include="Rewired\Demos\CustomControllerDemo_Player.cs" />
+    <Compile Include="Rewired\Demos\CustomControllersTiltDemo.cs" />
+    <Compile Include="Rewired\Demos\DualShock4SpecialFeaturesExample.cs" />
+    <Compile Include="Rewired\Demos\EightPlayersExample_Player.cs" />
+    <Compile Include="Rewired\Demos\FallbackJoystickIdentificationDemo.cs" />
+    <Compile Include="Rewired\Demos\GamepadTemplateUI\ControllerUIEffect.cs" />
+    <Compile Include="Rewired\Demos\GamepadTemplateUI\ControllerUIElement.cs" />
+    <Compile Include="Rewired\Demos\GamepadTemplateUI\GamepadTemplateUI.cs" />
+    <Compile Include="Rewired\Demos\PlayerMouseSpriteExample.cs" />
+    <Compile Include="Rewired\Demos\PlayerPointerEventHandlerExample.cs" />
+    <Compile Include="Rewired\Demos\PressAnyButtonToJoinExample_Assigner.cs" />
+    <Compile Include="Rewired\Demos\PressAnyButtonToJoinExample_GamePlayer.cs" />
+    <Compile Include="Rewired\Demos\PressStartToJoinExample_Assigner.cs" />
+    <Compile Include="Rewired\Demos\PressStartToJoinExample_GamePlayer.cs" />
+    <Compile Include="Rewired\Demos\SimpleCombinedKeyboardMouseRemapping.cs" />
+    <Compile Include="Rewired\Demos\SimpleControlRemapping.cs" />
+    <Compile Include="Rewired\Demos\TouchButtonExample.cs" />
+    <Compile Include="Rewired\Demos\TouchControls1_ManipulateCube.cs" />
+    <Compile Include="Rewired\Demos\TouchJoystickExample.cs" />
+    <Compile Include="Rewired\Demos\UIPointer.cs" />
+    <Compile Include="Rewired\FlightPedalsTemplate.cs" />
+    <Compile Include="Rewired\FlightYokeTemplate.cs" />
+    <Compile Include="Rewired\GamepadTemplate.cs" />
+    <Compile Include="Rewired\HOTASTemplate.cs" />
+    <Compile Include="Rewired\IFlightPedalsTemplate.cs" />
+    <Compile Include="Rewired\IFlightYokeTemplate.cs" />
+    <Compile Include="Rewired\IGamepadTemplate.cs" />
+    <Compile Include="Rewired\IHOTASTemplate.cs" />
+    <Compile Include="Rewired\InputManager.cs" />
+    <Compile Include="Rewired\Integration\UnityUI\PlayerPointerEventData.cs" />
+    <Compile Include="Rewired\Integration\UnityUI\PointerEventType.cs" />
+    <Compile Include="Rewired\Integration\UnityUI\RewiredPointerInputModule.cs" />
+    <Compile Include="Rewired\Integration\UnityUI\RewiredStandaloneInputModule.cs" />
+    <Compile Include="Rewired\Internal\ControllerTemplateFactory.cs" />
+    <Compile Include="Rewired\IRacingWheelTemplate.cs" />
+    <Compile Include="Rewired\ISixDofControllerTemplate.cs" />
+    <Compile Include="Rewired\RacingWheelTemplate.cs" />
+    <Compile Include="Rewired\SixDofControllerTemplate.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\ButtonInfo.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\CalibrationWindow.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\CanvasScalerExt.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\CanvasScalerFitter.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\ControlMapper.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\CustomButton.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\CustomSlider.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\CustomToggle.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\ICustomSelectable.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\InputBehaviorWindow.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\InputFieldInfo.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\InputRow.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\LanguageData.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\ScrollbarVisibilityHelper.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\ScrollRectSelectableChild.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\ThemedElement.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\ThemeSettings.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\ToggleInfo.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\UIControl.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\UIControlSet.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\UIElementInfo.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\UIGroup.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\UIImageHelper.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\UISelectionUtility.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\UISliderControl.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\UITools.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\Window.cs" />
+    <Compile Include="Rewired\Utils\ExternalTools.cs" />
+    <Compile Include="ScoreScript.cs" />
+    <Compile Include="Script.cs" />
+    <Compile Include="SecretScript.cs" />
+    <Compile Include="StartButton.cs" />
+    <Compile Include="SweepScript.cs" />
+    <Compile Include="SwingingDoorScript.cs" />
+    <Compile Include="TapePlayerScript.cs" />
+    <Compile Include="TextUnderliner.cs" />
+    <Compile Include="UIController.cs" />
+    <Compile Include="UiManager.cs" />
+    <Compile Include="UiSettings.cs" />
+    <Compile Include="WarningScreenScript.cs" />
+    <Compile Include="YouWonScript.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
